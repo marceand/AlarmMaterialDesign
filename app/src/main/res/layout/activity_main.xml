@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.marceme.alarm.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_moon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:rotation="160"
+        app:srcCompat="@drawable/ic_moon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_moon"
+        android:layout_centerHorizontal="true"
+        android:text="Alarm set to ring at"
+        android:textColor="@color/color_white"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_time_title"
+        android:layout_centerHorizontal="true"
+        android:text="7:15 am"
+        android:textSize="44sp"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/button_edit_time"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_edit"
+        android:background="@drawable/circle_edit"
+        android:padding="6dp"
+        android:layout_alignBottom="@+id/text_time"
+        android:layout_toEndOf="@+id/text_time_title"
+        android:layout_margin="6dp"/>
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Good Night!"
+        android:textSize="28sp"
+        android:textColor="@color/color_rock_blue"/>
+
+    <ImageView
+        android:id="@+id/image_mountains_bg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_mountains"/>
+
+
+    <TextView
+        android:id="@+id/text_alarm_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALARM ON"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/switch_alarm_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Switch
+        android:id="@+id/switch_alarm_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:theme="@style/switch_style"/>
+
+</RelativeLayout>
